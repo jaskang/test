@@ -1,0 +1,22 @@
+name = "ghtest"
+owner = "pm"
+
+[[members]]
+id = "pm"
+role = "pm"
+
+[[members]]
+id = "engineer"
+role = "engineer"
+
+[[members]]
+id = "tester"
+role = "tester"
+
+[settings]
+check = "python3 -m unittest -q"
+
+[[sources]]
+kind = "github"
+every = 1
+max_per_day = 5
