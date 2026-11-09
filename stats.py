@@ -7,4 +7,7 @@ def mean(xs):
 
 def median(xs):
     s = sorted(xs)
-    return s[len(s) // 2]
+    mid = len(s) // 2
+    if len(s) % 2 == 0:
+        return (s[mid - 1] + s[mid]) / 2
+    return s[mid]
